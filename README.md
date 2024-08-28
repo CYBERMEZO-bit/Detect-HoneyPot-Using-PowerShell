@@ -6,7 +6,7 @@ How to Know if this Device is Physical or not Physical {Virtual} on Windows Envi
 
 It Was The First Task at The Digital Egypt Pioneers Initiative - DEPI
 
-The Script was tested on my Windows and Windows Sandbox. Results suggest limitations in identifying all honeypots. Consider
+The Script was tested on my Windows and Windows Sandbox. Results suggest limitations in identifying all honeypots. 
 
 This script only works on Windows devices
 
