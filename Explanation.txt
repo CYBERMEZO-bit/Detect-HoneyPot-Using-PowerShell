@@ -1,0 +1,31 @@
+Explanation of the script (Powershell):
+
+This script is written in Powershell and is used to deduce whether a device is running inside a virtual machine or not. The script does The following :
+
+
+
+1 Retrieving System Information: The Get-WmiObject command is used to extract information about the system from the Win32_ComputerSystem class.
+ The goal is to check whether the word "Virtual" is present in the device model (computerSystemInfo.Model).
+
+ 
+
+2 Checking the device model: If the device model contains the word "Virtual", the script assumes that the device is running inside a virtual machine and prints a message to the screen.
+
+ 
+3 Retrieving BIOS information (this is optional): If the device model does not have "Virtual", the script attempts to extract BIOS information using the Get-CimInstance command.
+
+ 
+
+4 Check availability of BIOS information: If BIOS information is found, the script assumes the device may be a physical device and displays the vendor information and serial number.
+
+ 
+
+5 Condition of BIOS information not found: If BIOS information is not found, the script cannot conclusively determine whether
+ the device is physical or virtual and prints a message stating that BIOS information is not available.
+
+
+
+
+
+
+                                                                                      
